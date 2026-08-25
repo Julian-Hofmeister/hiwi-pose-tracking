@@ -1,0 +1,9 @@
+/**:
+  ros__parameters:
+    source_type: synthetic
+    path: ""
+    device_index: 0
+    fps: 15.0
+    frame_id: camera_optical_frame
+    width: 640
+    height: 480

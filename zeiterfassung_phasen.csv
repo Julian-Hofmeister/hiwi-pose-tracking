@@ -1,0 +1,9 @@
+Phase;Arbeitspaket;Stunden_ohne_KI;Spanne_min;Spanne_max;Datum_von;Datum_bis;Stunden_gebucht;Taetigkeit
+0;Einarbeitung Briefing Plan Repo;6;4;8;;;6;Briefing Nils, Umsetzungsplan, GitHub-Repo
+1;Docker ROS2 und Passthrough-Node;16;12;22;;;16;Docker Jazzy, Colcon-Paket, Image-Passthrough, Mock-Kamera, Launch, Tests
+2;RTMPose Estimator und Docker-Stack;24;18;32;;;24;PyTorch/MMPose CPU pinnen, Estimator-API, Testbild, Lizenzen
+3;Integration Kamera zu Pose-Overlay;20;16;26;;;20;ROS-Node, RTMPose-Subprocess, latest-frame-wins, Debug-Bild, Tests
+4;ROS-Message-Format;12;8;16;;;12;Paket human_pose_msgs, Converter, variable Keypoints, Header
+5;Multi-Kamera Parallelbetrieb;10;8;14;;;10;Namespaces, gemeinsame YAML, Multi-Launch, Isolationstests
+6;Tests Messung Dokumentation;12;8;16;;;12;pytest, Laufzeitmessung, README
+Summe Phasen 1-6 inkl. Einarbeitung;Erste Version ohne Prüfstand;100;74;134;;;100;

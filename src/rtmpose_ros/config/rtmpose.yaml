@@ -1,0 +1,15 @@
+/**:
+  ros__parameters:
+    backend: rtmpose
+    device: cpu
+    # Tiny pose model (metafile Name). Faster than alias "human" (RTMPose-m).
+    pose_model: rtmpose-t_8xb256-420e_body8-256x192
+    pose_weights: ''
+    # Tiny detector instead of the default person RTMDet-m.
+    detector_model: rtmdet-t
+    detector_weights: ''
+    keypoint_threshold: 0.3
+    detection_threshold: 0.5
+    publish_debug_image: true
+    publish_poses: true
+    rtmpose_python: /opt/rtmpose/bin/python

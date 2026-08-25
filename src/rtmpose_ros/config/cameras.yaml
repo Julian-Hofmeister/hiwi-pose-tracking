@@ -1,0 +1,13 @@
+# Parallel pose-estimator instances. Model settings stay in rtmpose.yaml.
+# Per-camera input/output is the namespace (and optional topic remaps).
+#
+# Topics under each namespace stay relative: image, debug_image, poses.
+# Example: /camera_1/image, /camera_1/poses.
+
+cameras:
+  - namespace: camera_1
+    frame_id: camera_1_optical_frame
+  - namespace: camera_2
+    frame_id: camera_2_optical_frame
+  - namespace: webcam
+    frame_id: webcam_optical_frame

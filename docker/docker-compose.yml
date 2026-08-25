@@ -1,0 +1,18 @@
+services:
+  dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: hiwi-pose-tracking:jazzy
+    working_dir: /ws
+    volumes:
+      - ..:/ws
+      - mmpose-cache:/root/.cache
+    stdin_open: true
+    tty: true
+    # Webcam-Passthrough nur unter Linux, z. B.:
+    # devices:
+    #   - /dev/video0:/dev/video0
+
+volumes:
+  mmpose-cache:

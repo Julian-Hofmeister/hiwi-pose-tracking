@@ -1,0 +1,11 @@
+.git
+.gitignore
+build
+install
+log
+.colcon
+**/__pycache__
+**/*.pyc
+**/*.egg-info
+.pytest_cache
+UMSETZUNGSPLAN.md
