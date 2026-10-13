@@ -166,6 +166,17 @@ Standalone CLI without ROS:
 /opt/rtmpose/bin/python /ws/scripts/run_rtmpose.py --backend rtmpose --image /path/to.jpg --output /tmp/out.json
 ```
 
+### Annotate still images (overlay PNG/JPEG)
+
+Put images in `tmp/inbox/` (or pass a single file), then:
+
+```powershell
+docker compose -f docker/docker-compose.yml run --rm dev bash -lc "/opt/rtmpose/bin/python /ws/scripts/annotate_poses.py --input /ws/tmp/inbox --output-dir /ws/tmp/out --json"
+```
+
+Annotated images land in `tmp/out/` as `*_pose.jpg` (plus optional JSON).
+Uses the same fast CPU defaults as `rtmpose.yaml` (RTMPose-t + RTMDet-t).
+
 Runtime probe:
 
 ```bash
